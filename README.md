@@ -9,9 +9,9 @@ Telegram-бот с нейронной сетью для генерации оп�
   * ```cd Captioning-bot```
   * ```pip install -r requirements.txt```
 * Скачать веса для модели генерации описаний и разместить по пути ```source/model```:  
- * [Веса модели](https://drive.google.com/file/d/1XQiRc67_tngFnuIqjLLQYzKW8MGBexCI/view?usp=sharing).
+  * [Веса модели](https://drive.google.com/file/d/1XQiRc67_tngFnuIqjLLQYzKW8MGBexCI/view?usp=sharing).
 * В консоли вызвать:  
- * ```python bot.py```
+  * ```python bot.py```
 
 Пример работы бота:  
 ![ss](/source/data/example.jpg)
