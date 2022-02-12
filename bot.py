@@ -14,10 +14,6 @@ def start(update, context):
     update.message.reply_text('Отправь мне картинку и я сгенерирую к ней описание!')
 
 
-def help(update, context):
-    update.message.reply_text('help command received')
-
-
 def error(update, context):
     update.message.reply_text('Произошла ошибка!')
 
@@ -32,20 +28,13 @@ def get_caption(update, context):
     update.message.reply_text(caption)
 
 
-def text(update, context):
-    text_received = update.message.text
-    update.message.reply_text(f'did you said "{text_received}" ?')
-
-
 def main():
     TOKEN = ""  # paste token for your bot
     updater = Updater(TOKEN, use_context=True)
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))              # handler for start command
-    dispatcher.add_handler(CommandHandler("help", help))                # handler for help command
-    dispatcher.add_handler(MessageHandler(Filters.photo, get_caption))
-    dispatcher.add_handler(MessageHandler(Filters.text, text))          # handler for normal text (not commands)
+    dispatcher.add_handler(MessageHandler(Filters.photo, get_caption))  # handle for get caption
     dispatcher.add_error_handler(error)                                 # handler for errors
 
     updater.start_polling()
