@@ -1,2 +1,3 @@
 # Captioning-bot
-Telegram bot with image captioning neural network
+
+Telegram-бот с нейронной сетью для генерации описаний к изображениям (image captioning).  
