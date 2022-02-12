@@ -3,6 +3,9 @@
 Telegram-бот с нейронной сетью для генерации описаний к изображениям (image captioning).  
 
 
-[Скачать exe](https://drive.google.com/file/d/1m7e3Ef9Y7gLLe_gxILp0y9BTdwAswVOD/view?usp=sharing).
+[Скачать веса модели](https://drive.google.com/file/d/1XQiRc67_tngFnuIqjLLQYzKW8MGBexCI/view?usp=sharing).
 
-![ss](/source/data/screenshot.png)
+Запуск бота:
+```python bot.py```
+
+![ss](/source/data/example.jpg)
